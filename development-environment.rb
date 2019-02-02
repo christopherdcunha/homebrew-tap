@@ -1,0 +1,93 @@
+class DevelopmentEnvironment < Formula
+  desc "Config management for our preferred dev environment."
+  homepage "https://dcunhamatata.com"
+
+  # NOTE(@christopherdcunha): These values are fake values. We need to set them
+  # in order for `brew tap ...` to work.
+  # {
+      url "https://httpbin.org/get"
+      version "0.0.0"
+  # }
+  depends_on "adr-tools"
+  depends_on "autoconf"
+  depends_on "awscli"
+  depends_on "boost"
+  depends_on "bower"
+  depends_on "bumpversion"
+  depends_on "chezscheme"
+  depends_on "cmake"
+  depends_on "coreutils"
+  depends_on "docker"
+  depends_on "dos2unix"
+  depends_on "dpkg"
+  depends_on "feh"
+  depends_on "ffmpeg"
+  depends_on "findutils"
+  depends_on "fontconfig"
+  depends_on "freetype"
+  depends_on "gettext"
+  depends_on "ghostscript"
+  depends_on "gnu-sed"
+  depends_on "gnu-tar"
+  depends_on "gnupg"
+  depends_on "gnutls"
+  depends_on "highlight"
+  depends_on "htop"
+  depends_on "imagemagick"
+  depends_on "jinja2-cli"
+  depends_on "jq"
+  depends_on "lua"
+  depends_on "md5sha1sum"
+  depends_on "nghttp2"
+  depends_on "nginx"
+  depends_on "node"
+  depends_on "openssl"
+  depends_on "opus"
+  depends_on "pandoc"
+  depends_on "pcre"
+  depends_on "perl"
+  depends_on "postgresql"
+  depends_on "python"
+  depends_on "ranger"
+  depends_on "reattach-to-user-namespace"
+  depends_on "rust"
+  depends_on "sdcv"
+  depends_on "sdl2"
+  depends_on "sloccount"
+  depends_on "sqlite"
+  depends_on "stow"
+  depends_on "telnet"
+  depends_on "the_silver_searcher"
+  depends_on "tmux"
+  depends_on "tox"
+  depends_on "tree"
+  depends_on "w3m"
+  depends_on "webp"
+  depends_on "xz"
+  depends_on "yarn"
+
+  bottle :unneeded
+
+  def install
+    ohai "# ====================================================================================== #"
+    ohai "#                                                                                        #"
+    ohai "# MANUAL INSTALL STEPS:                                                                  #"
+    ohai "#                                                                                        #"
+    ohai "#   You will need to install a few things manually to setup your development             #"
+    ohai "#   environment. These tools cannot be installed via Homebrew (at the time of writing    #"
+    ohai "#   this formula):                                                                       #"
+    ohai "#                                                                                        #"
+    ohai "#   - Brew Symlinks: 'brew link gettext --force'                                         #"
+    ohai "#   - Docker  https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac.   #"
+    ohai "#                                                                                        #"
+    ohai "# NOTE(@christopherdcunha): You will see an error about an empty installation. This      #"
+    ohai "# is because this Homebrew formula simply installs dependencies. Ignore the error.       #"
+    ohai "#                                                                                        #"
+    ohai "# ====================================================================================== #"
+  end
+
+  test do
+    true
+  end
+
+end
