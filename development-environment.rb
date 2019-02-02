@@ -20,7 +20,6 @@ class DevelopmentEnvironment < Formula
   depends_on "docker"
   depends_on "dos2unix"
   depends_on "dpkg"
-  depends_on "feh"
   depends_on "ffmpeg"
   depends_on "findutils"
   depends_on "fontconfig"
