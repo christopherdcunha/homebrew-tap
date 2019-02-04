@@ -16,6 +16,6 @@ class Bumpversion < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("script -q /dev/null #{bin}/bumpversion --version")
+    assert_includes shell_output("script -q /dev/null #{bin}/bumpversion --help"), "bumpversion: v#{version}"
   end
 end
