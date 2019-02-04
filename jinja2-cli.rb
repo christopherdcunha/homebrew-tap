@@ -9,6 +9,8 @@ class Jinja2Cli < Formula
 
   bottle :unneeded
 
+  depends_on "python"
+
   def install
     virtualenv_install_with_resources
   end

@@ -9,6 +9,8 @@ class Bumpversion < Formula
 
   bottle :unneeded
 
+  depends_on "python"
+
   def install
     virtualenv_install_with_resources
   end
@@ -16,5 +18,4 @@ class Bumpversion < Formula
   test do
     assert_match version.to_s, shell_output("script -q /dev/null #{bin}/bumpversion --version")
   end
-
 end
